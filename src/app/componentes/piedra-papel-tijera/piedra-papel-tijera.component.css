@@ -1,0 +1,118 @@
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+   
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbar.Ganador {
+    background-color: #059F2F;
+}
+#snackbar.Perdedor {
+    background-color: #FF0000;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/* .imgPiedra{
+    background: url("../../../assets/imagenes/ppt_mm.png") -170px -110px;
+    width: 150px;
+    height: 150px;
+}
+
+.imgPapel{
+    background: url("../../../assets/imagenes/ppt_mm.png") -90px -260px;
+    width: 150px;
+    height: 150px;
+}
+
+.imgTijera{
+    background: url("../../../assets/imagenes/ppt_mm.png") -250px -260px;
+    width: 150px;
+    height: 150px;
+} */
+
+.imgPiedra{
+    background: url("../../../assets/imagenes/ppt_piedra.jpg") no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 30px auto;
+}
+
+.imgPapel{
+    background: url("../../../assets/imagenes/ppt_papel.jpg") no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 30px auto;
+}
+
+.imgTijera{
+    background: url("../../../assets/imagenes/ppt_tijera.jpg") no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 30px auto;
+}
+
+.imgJugador{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#imgPiedraJugador{
+    background: url("../../../assets/imagenes/ppt_piedra.jpg") top left / cover no-repeat;
+    margin: 30px 30px 30px auto;
+    border-radius: 10px 30px;
+}
+
+#imgPapelJugador{
+    background: url("../../../assets/imagenes/ppt_papel.jpg") top left / cover no-repeat;
+    margin: 30px;
+    border-radius: 10px 10px;
+}
+
+#imgTijeraJugador{
+    background: url("../../../assets/imagenes/ppt_tijera.jpg") top left / cover no-repeat;
+    margin: 30px auto 30px 30px;
+    border-radius: 30px 10px;
+}
+
+#marcador{
+    min-height: 200px;
+    font-size: 120px;
+    text-align: center;
+}

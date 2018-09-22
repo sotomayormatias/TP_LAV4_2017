@@ -8,6 +8,7 @@ import { JuegoServiceService } from '../../servicios/juego-service.service';
 })
 export class ListadoComponent implements OnInit {
   public listadoParaCompartir: Array<any>;
+  public saludito: string;
    miServicioJuego:JuegoServiceService
 
   constructor(servicioJuego:JuegoServiceService) {
@@ -22,12 +23,14 @@ export class ListadoComponent implements OnInit {
   llamaService(){
     console.log("llamaService");
     this.listadoParaCompartir= this.miServicioJuego.listar();
+    this.saludito = "hola";
   }
 
   llamaServicePromesa(){
     console.log("llamaServicePromesa");
     this.miServicioJuego.listarPromesa().then((listado) => {
         this.listadoParaCompartir = listado;
+        this.saludito = "hola";
     });
   }
 }

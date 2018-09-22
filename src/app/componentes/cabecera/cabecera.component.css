@@ -1,13 +1,19 @@
 .panel
 {
     height: 200px;
-    background-image: url("/TP_LAV4_2017/assets/imagenes/cabecera.png");
+    background-image: url("/assets/imagenes/cabecera.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+#tituloSala{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size:50px;
+    margin-bottom: 30px;
+}
 
 .hero-text {
 text-align: center;
@@ -15,10 +21,11 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-color: #3E06B0;
+color: #007bff;
+margin-bottom: 30px !important;
 }
 
-.hero-text a {
+/* .hero-text a {
 border: none;
 outline: 0;
 display: inline-block;
@@ -27,9 +34,9 @@ color: black;
 background-color: #ddd;
 text-align: center;
 cursor: pointer;
-}
+} */
 
-.hero-text a:hover {
+/* .hero-text a:hover {
 background-color: #555;
 color: white;
-}
+} */

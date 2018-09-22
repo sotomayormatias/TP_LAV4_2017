@@ -1,0 +1,24 @@
+<div style="text-align:center">
+    <h1>
+        {{Juego.nombre}}!
+    </h1>
+</div>
+
+<div class="row">
+    <div class="imgJugador col-xs-4" id="imgPiedraJugador" (click)="Jugar('piedra')"></div>
+    <div class="imgJugador col-xs-4" id="imgPapelJugador" (click)="Jugar('papel')"></div>
+    <div class="imgJugador col-xs-4" id="imgTijeraJugador" (click)="Jugar('tijera')"></div>
+</div>
+
+<div class="row">
+    <div class="imgPiedra col-xs-4" *ngIf="Juego.eleccionUsuario == 'piedra'"></div>
+    <div class="imgPapel col-xs-4" *ngIf="Juego.eleccionUsuario == 'papel'"></div>
+    <div class="imgTijera col-xs-4" *ngIf="Juego.eleccionUsuario == 'tijera'"></div>
+
+    <div class="col-xs-4" id="marcador"><span>{{ Juego.puntajeUsuario }}</span>:<span>{{ Juego.puntajeMaquina }}</span></div>
+
+    <div class="imgPiedra col-xs-4" *ngIf="Juego.eleccionMaquina == 'piedra'"></div>
+    <div class="imgPapel col-xs-4" *ngIf="Juego.eleccionMaquina == 'papel'"></div>
+    <div class="imgTijera col-xs-4" *ngIf="Juego.eleccionMaquina == 'tijera'"></div>
+</div>
+<div id="snackbar">{{Mensajes}}</div>
