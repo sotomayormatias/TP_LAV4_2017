@@ -1,35 +1,54 @@
+
 .imagenDeQuienSoy{
     width: 100%;
-   
-    }
+}
+
 body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
 }
-p {font-size: 16px;}
-.margin {margin-bottom: 45px;}
+
+p {
+    font-size: 16px;
+}
+.margin {
+    margin-bottom: 45px;
+}
+
 .bg-1 { 
-    background-color: #1abc9c; /* Green */
+    background-color: #1a66bc; 
     color: #ffffff;
 }
+
 .bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
-    color: #ffffff;
-}
-.bg-3 { 
-    background-color: #ffffff; /* White */
+    background-color: #ebe852; 
     color: #555555;
 }
+
+.bg-3 { 
+    background-color: #1a66bc; 
+}
+
+.bg-3 h3{ 
+    color: #ffffff;
+}
+
 .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: #2f2f2f; 
     color: #fff;
 }
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.navbar {
+
+.nav-item{
+    padding: 0px 20px !important;
+}
+
+/* .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
@@ -38,6 +57,13 @@ p {font-size: 16px;}
     font-size: 12px;
     letter-spacing: 5px;
 }
+
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: #1a66bc !important;
+} */
+
+#miImagen{
+    display: inline;
+    width: 350px;
+    border-radius: 200px;
 }
