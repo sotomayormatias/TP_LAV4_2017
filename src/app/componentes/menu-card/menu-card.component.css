@@ -6,6 +6,10 @@
     max-width: 900px !important;
 }
 
+.card-deck{
+    margin: 20px 0px;
+}
+
 .button{
 	background-color: #1ABC9C;
 	color: #fff;
