@@ -24,6 +24,9 @@ export class MenuCardComponent implements OnInit {
       case 'Agilidad':
         this.router.navigate(['/Juegos/Agilidad']);
         break;
+        case 'Logoquiz':
+          this.router.navigate(['/Juegos/Logoquiz']);
+          break;
       case 'AdivinaMasListado':
         this.router.navigate(['/Juegos/AdivinaMasListado']);
         break;

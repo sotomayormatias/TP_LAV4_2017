@@ -1,0 +1,21 @@
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      {{Juego.nombre}}!
+    </h1>
+  </div>
+  <div class="contenedorImagen">
+    <img *ngIf="Juego.estado == 2" [src]="PathImagen">
+  </div>
+  <div id="botonera">
+    <button *ngIf="Juego.estado != 2" (click)="nuevoJuego()">Comenzar</button>
+    <button *ngIf="Juego.estado == 2" (click)="nuevaImagen()">Siguiente</button>
+    <button *ngIf="Juego.estado == 2" (click)="verificarMarca()">Verificar</button>
+  </div>
+  <div id="textoRespuesta">
+    <input *ngIf="Juego.estado == 2" type="text" id="respuestaUsuario" [(ngModel)]="Juego.nombreIngresado">
+  </div>
+  <div id="snackbar">{{Mensajes}}</div>
+</div>
+
+<!-- <audio id="music" src="../../../assets/"></audio> -->

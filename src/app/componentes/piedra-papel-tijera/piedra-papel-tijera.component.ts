@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { JuegoPiedraPapelTijera } from '../../clases/juego-piedra-papel-tijera'
+import { JuegoPiedraPapelTijera } from '../../clases/juego-piedra-papel-tijera';
 import { estadoJuego } from '../../clases/juego';
 
 @Component({

@@ -22,6 +22,7 @@ import { ListadoDePaisesComponent } from '../componentes/listado-de-paises/lista
 import { MapaDeGoogleComponent } from '../componentes/mapa-de-google/mapa-de-google.component'
 import { JugadoresListadoComponent } from '../componentes/jugadores-listado/jugadores-listado.component';
 import { PiedraPapelTijeraComponent } from '../componentes/piedra-papel-tijera/piedra-papel-tijera.component';
+import { LogoQuizComponent } from "../componentes/logo-quiz/logo-quiz.component";
 
 // declaro donde quiero que se dirija
 const MiRuteo = [
@@ -46,7 +47,8 @@ const MiRuteo = [
       { path: 'AdivinaMasListado', component: AdivinaMasListadoComponent },
       { path: 'Agilidad', component: AgilidadAritmeticaComponent },
       { path: 'AgilidadaMasListado', component: AgilidadMasListadoComponent },
-      { path: 'PPT', component: PiedraPapelTijeraComponent}]
+      { path: 'PPT', component: PiedraPapelTijeraComponent},
+      { path: 'Logoquiz', component: LogoQuizComponent}]
   },
   { path: '**', component: ErrorComponent },
   { path: 'error', component: ErrorComponent }];

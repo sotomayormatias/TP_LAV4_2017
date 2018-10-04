@@ -1,3 +1,8 @@
+.container {
+    min-height: 540px;
+}
+
+
 #snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -45,23 +50,6 @@
     to {bottom: 0; opacity: 0;}
 }
 
-/* .imgPiedra{
-    background: url("../../../assets/imagenes/ppt_mm.png") -170px -110px;
-    width: 150px;
-    height: 150px;
-}
-
-.imgPapel{
-    background: url("../../../assets/imagenes/ppt_mm.png") -90px -260px;
-    width: 150px;
-    height: 150px;
-}
-
-.imgTijera{
-    background: url("../../../assets/imagenes/ppt_mm.png") -250px -260px;
-    width: 150px;
-    height: 150px;
-} */
 
 .imgPiedra{
     background: url("../../../assets/imagenes/ppt_piedra.jpg") no-repeat;

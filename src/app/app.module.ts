@@ -53,6 +53,7 @@ import { MapaDeGoogleComponent } from './componentes/mapa-de-google/mapa-de-goog
 import { InputJugadoresComponent } from './componentes/input-jugadores/input-jugadores.component';
 import { SexoPipe } from './pipes/sexo.pipe';
 import { PiedraPapelTijeraComponent } from './componentes/piedra-papel-tijera/piedra-papel-tijera.component';
+import { LogoQuizComponent } from './componentes/logo-quiz/logo-quiz.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { PiedraPapelTijeraComponent } from './componentes/piedra-papel-tijera/pi
     JugadoresListadoComponent,
     InputJugadoresComponent,
     SexoPipe,
-    PiedraPapelTijeraComponent
+    PiedraPapelTijeraComponent,
+    LogoQuizComponent
   ],
   imports: [
     BrowserModule,
